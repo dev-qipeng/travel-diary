@@ -1,0 +1,93 @@
+/* pages/mine/mine.wxss */
+page{
+
+  background: rgb(238, 237, 237);
+
+}
+.header {
+  height: 100%;
+  padding-top:20px;
+}
+
+ .profile {
+  height: 65px;
+}
+.profile{
+  background-color: #fff;
+  
+  
+}
+.profile .avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 12px 10px;
+  border-radius: 20px;
+}
+
+.profile .description {
+  display: inline-block;
+  margin: 7.5px auto;
+  height: 50px;
+}
+
+.description .item {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.item-username{
+  color:#888;
+  font-size: 12px;
+}
+
+.more {
+    float: right;
+    margin: 22.5px 10px;
+    height: 20px;
+    width: 20px;
+}
+.tablist{
+  margin-top:20px;
+  background-color: #fff;
+}
+.header .tablist {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tablist .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 25%;
+    margin: 7.5px 0px;
+    border-right: 1px solid #eceff4;
+}
+
+.tab .content{
+    width: 25px;
+    height: 50px;
+    font-size: 12px;
+    color: #B3B3B3;
+}
+
+.tab .image {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+.index-cover{
+  display:block;
+  width:90%;
+  height:400rpx;
+  margin:0 5%;
+  
+}
+.box-deesc{
+ 
+  background-color: #fff;
+}

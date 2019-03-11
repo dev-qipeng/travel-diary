@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/new1/new1",
+    "pages/add/add",
+    "pages/index/index",
+    "pages/new/new",
+    "pages/mine/mine",
+    "pages/item/item",
+
+    "pages/me/me",
+    "pages/login/login",
+    "pages/Head/Head"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "小建游记",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#39b5de",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/mark.png",
+        "selectedIconPath": "images/icons/markHL.png",
+        "text": "印记"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "iconPath": "images/icons/add.png",
+        "selectedIconPath": "images/tabbar/add.png",
+        "text": "添加"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/icons/mine.png",
+        "selectedIconPath": "images/icons/mineHL.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

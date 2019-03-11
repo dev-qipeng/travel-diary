@@ -1,0 +1,50 @@
+/* pages/me/me.wxss */
+page{
+
+  background: rgb(238, 237, 237);
+
+}
+.all{
+
+  height:100%;
+  padding-top:40rpx;
+
+}
+.list-nv{
+ 
+  height:100rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  
+}
+.list{
+  width:710rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: #ddd 1px solid;
+  justify-content: space-between;
+}
+.list-left{
+  width:650rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-left image{
+position: relative;
+left:250rpx;
+ width:80rpx;
+ height: 80rpx;
+ border-radius: 5px;
+
+  
+}
+.list-img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.text2{
+  font-size: 13px;
+  color:#999;
+}

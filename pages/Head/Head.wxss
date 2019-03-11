@@ -1,0 +1,28 @@
+/* pages/Head/Head.wxss */
+
+.me{
+  height:1200rpx;
+  background-color: rgb(238, 236, 236);
+  padding-top: 50rpx;
+}
+.me-tx{
+ margin: auto 0;  
+  display: flex;
+  align-items:center; 
+  overflow: hidden;
+ 
+ background-color: #000;
+}
+.list-img{
+  width: 100%;
+  height: 100%;
+}
+input{
+
+  
+  width: 100%;
+  height: 80rpx;
+ 
+background-color:#fff;
+  color: #000;
+}

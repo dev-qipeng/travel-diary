@@ -1,0 +1,114 @@
+<!--pages/mine/mine.wxml-->
+<view class="header">
+    <navigator url="../me/me" class="profile">
+      <image class="avatar" mode="aspectFill" src="{{userInfo.avatar}}"></image>
+      <view class="description">
+        <view class="item">
+          <view style="margin-right:5px">{{userInfo.name}}</view>
+          <view>{{userInfo.gender}}</view>
+        </view>
+        <view class="item item-username">{{userInfo.sign}}</view>
+      </view>
+      <image class="more" mode="aspectFill" src="../../images/icons/more1.png" bindtap="touchAdd"></image>
+    </navigator>
+
+    <view class="tablist">
+      <view wx:for="{{tabs}}" wx:for-index="idx" class="tab" bindtap="touchTab" style="{{item.extraStyle}}" id="{{idx}}">
+        <view class="content" style="color:{{highLightIndex == idx ? '#54BFE2' : ''}};">
+          <image class="image" mode="aspectFit" src="{{highLightIndex == idx ? item.iconActive : item.icon}}"></image>
+          <view style="margin-top:2px;">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+<view class="box-deesc" wx:if="{{id==0}}" wx:for="{{informations}}">
+<navigator  class="index-navigator" url="../item/item?id={{idx}}">
+  <image mode="aspectFill" 
+  src="{{item.src}}"class="index-cover"></image>
+  <view class="index-desc">
+    <view class="index-left">
+      <view style="font-size:32rpx;"><text>{{item.text}}</text></view>
+      <view style="font-size:24rpx;color:darkgray">{{item.date}}
+         <view class="place">
+           <image mode="aspectFit"src="../../images/icons/poi2.png"></image>
+            洛阳
+         </view>
+      </view>
+    </view>
+
+     
+
+
+
+    <view class="index-right">
+     
+      
+    </view>
+  </view> 
+ </navigator>
+  </view>
+  <view class="box-deesc" wx:if="{{id==1}}" wx:for="{{informations1}}">
+<navigator  class="index-navigator" url="../item/item?id={{idx}}">
+  <image mode="aspectFit" 
+  src="{{item.src}}"class="index-cover"></image>
+  <view class="index-desc">
+    <view class="index-left">
+      <view style="font-size:32rpx;"><text>{{item.text}}</text></view>
+      <view style="font-size:24rpx;color:darkgray">{{item.date}}
+      <view class="place">
+           <image mode="aspectFit"src="../../images/icons/poi2.png"></image>
+            洛阳
+         </view></view>
+    </view>
+    <view class="index-right">
+     
+      
+    </view>
+  </view> 
+ </navigator>
+  </view>
+  <view class="box-deesc" wx:if="{{id==2}}" wx:for="{{informations2}}">
+   
+<navigator  class="index-navigator" url="../item/item?id={{idx}}">
+  <image mode="aspectFill" 
+  src="{{item.src}}"class="index-cover"></image>
+  <view class="index-desc">
+    <view class="index-left">
+      <view style="font-size:32rpx;"><text>{{item.text}}</text></view>
+      <view style="font-size:24rpx;color:darkgray">{{item.date}}
+      <view class="place">
+           <image mode="aspectFit"src="../../images/icons/poi2.png"></image>
+            洛阳
+         </view></view>
+    </view>
+    <view class="index-right">
+     
+      
+    </view>
+  </view> 
+ </navigator>
+  </view>
+  <view class="box-deesc" wx:if="{{id==3}}" wx:for="{{informations3}}">
+   
+   <navigator  class="index-navigator" url="../item/item?id={{idx}}">
+  <image mode="aspectFill" 
+  src="{{item.src}}"class="index-cover"></image>
+  <view class="index-desc">
+    <view class="index-left">
+      <view style="font-size:32rpx;"><text>{{item.text}}</text></view>
+      <view style="font-size:24rpx;color:darkgray">{{item.date}}
+      <view class="place">
+           <image mode="aspectFit"src="../../images/icons/poi2.png"></image>
+            洛阳
+         </view></view>
+    </view>
+    <view class="index-right">
+     
+      
+    </view>
+  </view> 
+</navigator>
+</view>

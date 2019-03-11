@@ -1,0 +1,26 @@
+<!--pages/me/me.wxml-->
+
+
+
+<view class="all">
+<view class="list-nv" wx:for="{{Info}}" bindtap='previewImg' data-aid='{{index}}' data-title='{{item.title}}'>
+<view class="list" >
+<view class="list-left">
+<text class="text1" >{{item.title}}</text>
+<block wx:if="{{index == 0}}">
+<image src="{{avatar}}" ></image>
+</block>
+<text class="text2">{{item.info}}</text>
+
+</view>
+  <block wx:if="{{index !== 2}}">
+  <view>
+   <image class="list-img" src="../../images/icons/more1.png" mode="aspectFill"/>
+   </view>
+  </block>
+ </view>
+
+</view>
+
+</view>
+

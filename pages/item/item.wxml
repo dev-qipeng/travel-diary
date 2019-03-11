@@ -1,0 +1,91 @@
+ <view class="container">
+  <view class="header" style="background-image:url(http://m.chanyouji.cn/index-cover/64695-2679221.jpg?imageView2/1/w/620/h/330/format/jpg)">
+    <!--顶部固定工具栏-->
+    <view class="toolbar">
+      <image class="item" mode="aspectFit" src="../../images/nav/comment.png"></image>
+        <image class="item" mode="aspectFit" src="../../images/nav/like1.png"></image>  
+        <image class="item" mode="aspectFit" src="../../images/nav/fav.png"></image>  
+        <image class="item" mode="aspectFit" src="../../images/nav/share.png"></image>
+    </view>
+
+    <!--日记meta信息区-->
+    <view class="title">
+      <image class="avatar" mode="aspectFill" src="{{avatar}}"> </image>
+      <view class="desc">
+          <view class="meta-title">小标题{{diary.meta.title}}</view>
+          <view class="meta-title">時間{{diary.meta.meta}}</view>
+          <view class="place">
+          <image src="../../images/icons/poi.png"></image>地址{{diary.meta.meta}}</view>
+      </view>
+    </view>
+  </view>
+  </view>
+ <view class="media">
+ <view >
+      <text  class="text">只有文本只有文本只有文本只有文本v只有文本只有文本只有文本只有文本只有文本只有文本只有文本只有文本只有文本只有文本只有文本
+      </text>
+    <view class="comments">
+     <view class="comments-item">
+      <image mode="aspectFit" src="../../images/icons/comment.png"></image>
+      <text>1</text>
+     </view>
+     <view class="comments-item">
+      <image mode="aspectFit" src="../../images/icons/like.png"></image>
+      <text>1</text>
+     </view>
+   
+    </view>
+ </view>
+</view>
+   <view class="media">
+    <image class="media-img" mode="aspectFill" src="http://m.chanyouji.cn/index-cover/64695-2679221.jpg?imageView2/1/w/620/h/330/format/jpg" bindtap="yulan" data-src="{{content.content}}"></image>
+    <view class="media-text"style="margin-top: 10rpx">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+    <view class="comments">
+    <view class="comments-item">
+      <image mode="aspectFit" src="../../images/icons/comment.png"></image>
+      <text>1</text>
+    </view>
+    <view class="comments-item">
+      <image mode="aspectFit" src="../../images/icons/like.png"></image>
+      <text>1</text>
+    </view>
+   
+    </view>
+    </view>
+
+    
+
+
+
+
+
+
+
+ <view class="media">
+    <video  src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>
+    <view  class="media-text" style="margin-top: 10rpx">视频文本</view>
+      <view class="comments">
+    <view class="comments-item">
+      <image mode="aspectFit" src="../../images/icons/comment.png"></image>
+      <text>1</text>
+    </view>
+    <view class="comments-item">
+      <image mode="aspectFit" src="../../images/icons/like.png"></image>
+      <text>1</text>
+    </view>
+   
+    </view>
+    <view class="footer">
+    <text>THE</text>
+    <text style="coloe:red;">END</text>
+    </view>
+</view>
+    <!-- 预览模式 -->
+<swiper class="swiper-container" duration="400" current="{{previewIndex}}" bindtap="leavePreviewMode" style="display:{{previewMode ? 'block' : 'none'}};">
+  <block wx:for="{{mediaList}}" wx:for-item="media">
+    <swiper-item>
+      <image src="{{media.content}}" mode="aspectFit"></image>
+    </swiper-item>
+  </block>
+</swiper>
+ 

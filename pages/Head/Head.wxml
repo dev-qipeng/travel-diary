@@ -1,0 +1,33 @@
+<template name='0' > <view class="me-tx" style=" height:{{info.windowHeight}}px; " >
+ <image class="list-img" bindtap="showAction" src="{{info.avatar}}" mode="aspectFit"/></view> </template>
+
+
+<template name='1'> 
+<view class="me">
+ <input class="weui-input" maxlength="10" bindinput='inputname' value="{{info.nickName}}" />
+ </view>
+ </template>
+
+
+<template name='2'>
+ <view class="me">
+ <input class="weui-input" maxlength="10"  value="{{info.username}}" />
+ </view></template>
+
+
+ <template name='3'> 
+ <view class="me">
+ <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{info.items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+</view>
+ </template>
+
+ <template name='4'>
+ <view class="me">
+ <input class="weui-input" maxlength="15" bindinput='inputsign' value="{{info.sign}}" />
+ </view></template>
+<template is='{{aid}}' data='{{info}}'/>
+
