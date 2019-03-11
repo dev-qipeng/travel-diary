@@ -1,11 +1,15 @@
 {
   "pages": [
     "pages/new1/new1",
-    "pages/add/add",
     "pages/index/index",
+    
+   
+    "pages/entry/entry",
+    "pages/item/item",
+    "pages/add/add",
     "pages/new/new",
     "pages/mine/mine",
-    "pages/item/item",
+    
 
     "pages/me/me",
     "pages/login/login",

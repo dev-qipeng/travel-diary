@@ -1,21 +1,23 @@
-<navigator  class="index-navigator" url="../item/item?id={{idx}}">
-  <image mode="aspectFit" src="http://m.chanyouji.cn/index-cover/64695-2679221.jpg?imageView2/1/w/620/h/330/format/jpg"class="index-cover"></image>
+<navigator class="index-navigator" url="../item/item?id={{idx}}">
+  <image mode="aspectFit" src="http://m.chanyouji.cn/index-cover/64695-2679221.jpg?imageView2/1/w/620/h/330/format/jpg" class="index-cover"></image>
   <view class="index-desc">
     <view class="index-left">
-      <view style="font-size:32rpx;"><text>我的第一次旅游日记我的第一次旅游日记我的第一次旅游日记</text></view>
-      <view style="font-size:24rpx;color:darkgray">2008年01月01日
-         <view class="place">
-           <image mode="aspectFit"src="../../images/icons/poi2.png"></image>
-            北京市
-         </view>
+      <view style="font-size:32rpx;">
+        <text>我的第一次旅游日记我的第一次旅游日记我的第一次旅游日记</text>
       </view>
-         
+      <view style="font-size:24rpx;color:darkgray">2008年01月01日
+        <view class="place">
+          <image mode="aspectFit" src="../../images/icons/poi2.png"></image>
+          北京市
+        </view>
+      </view>
+
     </view>
     <view class="index-right">
       <image class="avatar" mode="aspectFill" src="{{avatar}}"></image>
-      
+
     </view>
-  </view> 
+  </view>
 </navigator>
 
 
@@ -77,5 +79,3 @@
     </view>
   </view> 
 </navigator> -->
-
-
