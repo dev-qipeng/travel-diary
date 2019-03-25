@@ -30,6 +30,14 @@ function listToMatrix(list, elementPerSubArray) {
   return matrix;
 }
 
+const formatDate = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  const day = date.getDate()
+
+  return year+'.'+month+'.'+day;
+}
+
 module.exports = {
   formatTime: formatTime,
   listToMatrix: listToMatrix,

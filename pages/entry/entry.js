@@ -8,6 +8,7 @@ const app = getApp();
 
 Page({
   data: {
+    avatar:'',
     // 当前日志详情
     diary: undefined,
 
@@ -27,6 +28,9 @@ Page({
   onLoad: function (params) {
     this.getDiary(params);
     this.getMediaList();
+    this.setData({
+      "avatar": app.appData.userInfo.avatarUrl
+    })
   },
 
   // 加载日记

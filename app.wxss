@@ -1,45 +1,52 @@
-.avatar{
+page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: #eceff4;
+  font-size: 30rpx;
+  font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}
+
+.avatar {
   display: block;
   width: 70rpx;
   height: 70rpx;
   border-radius: 35rpx;
-  
 }
-.index-navigator{
-  width:100%;
-  height:530rpx;
- 
-  
+
+.index-navigator {
+  width: 100%;
+  height: 530rpx;
 }
 
 .index-desc {
   display: flex;
-  width:90%;
+  width: 90%;
   height: 120rpx;
   margin-left: 16px;
   border-bottom: 1rpx #ccc solid;
 }
- .index-left {
-  
-width:80%;
-height:90rpx;
 
-
-
+.index-left {
+  width: 80%;
+  height: 90rpx;
 }
-.index-left text{
-    display: inline-block ;
-    width:100%;
-white-space:nowrap;
-overflow:hidden; 
-text-overflow:ellipsis ;
+
+.index-left text {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.index-right{
+
+.index-right {
   margin-left: 25px;
 }
 
 /* 定位图标 */
-.place image{
+
+.place image {
   width: 20rpx;
   height: 20rpx;
   padding-right: rpx;

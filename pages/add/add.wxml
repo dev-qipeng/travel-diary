@@ -1,5 +1,5 @@
 <!--new.wxml-->
-<!-- 默认显示common -->
+
 <template name="common">
   <scroll-view class="container" scroll-y="true">
     <view class="common-container">
@@ -11,7 +11,7 @@
             </view>
           </block>
           <block wx:elif="{{item.type == 'IMAGE'}}">
-            <image src="{{item.content}}" class="album-item" mode="aspectFill"></image>
+            <image src="{{item.content}}" class="album-item" mode="scaleToFill"></image>
           </block>
           <block wx:elif="{{item.type == 'VIDEO'}}">
             <video class="album-item" src="{{item.content}}"></video>
@@ -33,13 +33,20 @@
     </view>
   </view>
 
-
+  <action-sheet hidden="{{mediaActionSheetHidden}}" bindchange="mediaActionSheetChange">
+    <block wx:for-items="{{mediaActionSheetItems}}" wx:for-index="id">
+      <action-sheet-item class="action-item" bindtap="{{mediaActionSheetBinds[id]}}">
+        {{item}}
+      </action-sheet-item>
+    </block>
+    <action-sheet-cancel class='action-cacel'>取消</action-sheet-cancel>
+  </action-sheet>
 </template>
 
 <template name="inputText">
   <view class="input-container">
     <view style="height:47rpx" wx:for="{{inputStatus.lines}}" wx:for-index="idx">
-      <textarea type="text" data-index="{{idx}}" placeholder="" bindinput="textInput" value="{{item}}" auto-focus="{{idx == inputStatus.row ? true : false}}" bindfocus="focusInput" />
+      <input type="text" data-index="{{idx}}" placeholder="" bindinput="textInput" bindchange="textInputChange" value="{{item}}" auto-focus="{{idx == inputStatus.row ? true : false}}" bindfocus="focusInput"/>
     </view>
   </view>
   <view class="tabbar">
@@ -52,14 +59,12 @@
   </view>
 </template>
 
-<view style="width:100%;height:1000rpx;background-color:#555;">
+<view style="width:100%;height:100%">
   <block wx:if="{{showMode == 'common'}}">
-    <template is="{{showMode}}" data="{{showTab: showTab, mediaActionSheetHidden: mediaActionSheetHidden, mediaActionSheetItems: mediaActionSheetItems, mediaActionSheetBinds: mediaActionSheetBinds, layoutList: layoutList}}">
-    </template>
+    <template is="{{showMode}}" data="{{showTab: showTab, mediaActionSheetHidden: mediaActionSheetHidden, mediaActionSheetItems: mediaActionSheetItems, mediaActionSheetBinds: mediaActionSheetBinds, layoutList: layoutList}}"></template>
   </block>
   <block wx:if="{{showMode == 'inputText'}}">
-    <template is="{{showMode}}" data="{{inputStatus}}">
-    </template>
+    <template is="{{showMode}}" data="{{inputStatus}}"></template>
   </block>
   <loading hidden="{{!showLoading}}" bindchange="hideLoading">
     {{loadingMessage}}

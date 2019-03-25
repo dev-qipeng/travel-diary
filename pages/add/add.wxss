@@ -1,9 +1,7 @@
 /** new.wxss **/
 
 .container {
-  height: 91%;
-  background-color: #555;
-  
+  height: 90%;
 }
 
 .common-container {
@@ -11,22 +9,17 @@
 }
 
 .item-group {
-  display: flex;
   align-items: center;
 }
 
 .album-item {
   flex-direction: column;
-  margin: 0.1rem;
+  margin: 0 auto;
   background: white;
-  width: 6.4rem;
-  height: 6.4rem;
+  min-height: 200rpx;
 }
 
 .content-text{
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 .content-text view {
@@ -54,7 +47,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .item .icon {
@@ -65,19 +57,18 @@
 .input-container {
   height: 80%;
   background-color: #eceff4;
-  
+  background-image: linear-gradient(#E1E6EA .1em, transparent .1em);
   background-size: 100% 48rpx;
   padding: 0;
   box-sizing: border-box;
   margin: 0 10rpx;
 }
 
-.input-container itextarea{
- 
+.input-container input{
   height: 47rpx;
-   font-size: 28rpx;
+  max-height: 47rpx;
+  font-size: 28rpx;
   margin: 0px;
-   
 }
 
 .action-item, .action-cacel {

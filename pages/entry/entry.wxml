@@ -50,10 +50,14 @@
 
     <!--日记meta信息区 头像标题时间等-->
     <view class="title">
-      <image class="avatar" mode="aspectFit" src="{{diary.meta.avatar}}"> </image>
+      <image class="avatar" mode="aspectFit" src="{{avatar}}"> </image>
       <view class="desc">
           <view class="item">{{diary.meta.title}}</view>
           <view class="item">{{diary.meta.meta}}</view>
+          <view class="item">
+          <image style="width: 25rpx; height: 25rpx;" mode="aspectFit" src="../../images/icons/poi2.png"></image>
+          {{diary.list[0].poi.name}}
+          </view>
       </view>
     </view>
   </view>
