@@ -24,7 +24,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-    this.getDiaries();
+    if (app.appData.userInfo == null) {
+      let userInfo =  wx.getStorageSync("userInfo");
+      console.log(userInfo,'userInfo')
+      if (userInfo) {
+        app.appData.userInfo = userInfo;
+      }else {
+        wx.navigateTo({
+          url: "../login/login"
+        })
+      }
+    }
   },
   onShow() {
     this.getDiaries();

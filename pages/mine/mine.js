@@ -54,7 +54,7 @@ Page({
       name: "",
       gender: "", // 1, male; 2, female
       username: '',
-      sign: ''
+      location: ""
     },
     // TODO 用户信息
 
@@ -102,19 +102,13 @@ Page({
         date: "2008年08月08日"
       }
     ]
-
-
-
-
-
-
   },
   onLoad: function() {
     this.setData({
       'userInfo.avatar': app.appData.userInfo.avatarUrl,
       'userInfo.name': app.appData.userInfo.nickName,
       'gender': app.appData.userInfo.gender,
-      'userInfo.sign': app.appData.sign
+      'userInfo.location': app.appData.userInfo.country + ' ' + app.appData.userInfo.province + '' + app.appData.userInfo.city,
     });
     if (this.data.gender == 1) {
       this.setData({
@@ -152,43 +146,8 @@ Page({
 
   // 点击tab项事件
   touchTab: function(event) {
-    console.log(event)
-    var tabIndex = parseInt(event.currentTarget.id);
-    var template = "tab" + (tabIndex + 1).toString();
-
-    this.setData({
-      id: tabIndex,
-      currentTab: template,
-      highLightIndex: tabIndex.toString()
-    });
-  },
-
-  // 点击新建日记按钮
-  touchAdd: function(event) {
-    this.setData({
-      modalShowStyle: "opacity:1;pointer-events:auto;"
+    wx.switchTab({
+      url: '../list/list',
     })
   },
-
-  // 新建日记
-  touchAddNew: function(event) {
-    this.hideModal();
-
-    wx.navigateTo({
-      url: "../new/new?title=" + this.data.diaryTitle,
-    });
-  },
-
-  // 取消标题输入
-  touchCancel: function(event) {
-    this.hideModal();
-    this.clearTitle();
-  },
-
-  // 标题输入事件
-  titleInput: function(event) {
-    this.setData({
-      diaryTitle: event.detail.value,
-    })
-  }
 })

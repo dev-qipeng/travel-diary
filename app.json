@@ -1,20 +1,16 @@
 {
   "pages": [
     "pages/list/list",
-    "pages/add/add",
-    "pages/index/index",
+    "pages/login/login",
     
-   
+    "pages/add/add",
     "pages/entry/entry",
     "pages/item/item",
-  
     "pages/new/new",
     "pages/mine/mine",
-    
-
     "pages/me/me",
-    "pages/login/login",
     "pages/Head/Head"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

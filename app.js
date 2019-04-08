@@ -11,14 +11,6 @@ App({
     // 本地日记缓存
     localDiaries: null,
     userInfo: null,
-    userinfo: null,
-    username: '',
-    password: '',
-    touxiang: "",
-    name: '',
-    gender: '',
-    aaa: '',
-    sign: ''
   },
 
   /**

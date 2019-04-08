@@ -1,8 +1,7 @@
 /* pages/mine/mine.wxss */
 page{
-
   background: rgb(238, 237, 237);
-
+  overflow: hidden;
 }
 .header {
   height: 100%;

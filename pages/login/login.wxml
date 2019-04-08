@@ -1,29 +1,13 @@
 <!--pages/login/login.wxml-->
-<view class="login">
-  <text>欢迎登录游记</text>
-</view>
-<view class="section">
-  账号：
-  <input bindinput='usernameInput' maxlength="10" placeholder="最大输入长度10" />
-</view>
-<view class="section">
-  密码：
-  <input bindinput='passwordInput' password type="number" />
-</view>
-<view class="button">
-  <button class="left" bindtap="zuche">注册</button>
-  <button class="right" bindtap="loginBtnClick">登录</button>
-</view>
-
-<view>
-  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
-    获取用户信息
-  </button>
-</view>
-
-<view class="login-tap" bindtap="denglu">
-  <view class="login-an">
-    <image src='/images/icons/login.png'></image>
-    <text>微信登录</text>
+<page>
+  <view class="title">
+    <text>欢迎登录游记</text>
   </view>
-</view>
+
+  <view class='get-user-info'>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+      开始体验
+    </button>
+  </view>
+
+</page>
