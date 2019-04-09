@@ -45,7 +45,10 @@
   <view class="header" style="background-image:url({{diary.meta.cover}})">
     <!--顶部固定工具栏-->
     <view class="toolbar">
-      <image class="item" mode="aspectFit" wx:for="{{toolbar}}" src="{{item}}"></image>
+      <button plain="true" data-name="shareBtn" open-type="share" id='{{id}}'>
+        <image class="item" mode="aspectFit" src="../../images/nav/share.png"></image>
+      </button>
+       <!-- <image class="item" mode="aspectFit" wx:for="{{toolbar}}" src="{{item}}"></image> -->
     </view>
 
     <!--日记meta信息区 头像标题时间等-->

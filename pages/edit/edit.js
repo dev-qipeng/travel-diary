@@ -122,6 +122,7 @@ Page({
       if (title) {this.setData({
         'diary.meta.title': title,
         'diary.meta.create_time': util.formatTime(new Date()),
+        'diary.meta.meta': util.formatDate(new Date()),
         'diary.meta.cover': ''
       });}
     }
@@ -359,11 +360,10 @@ Page({
   // 构造日记meta信息
   setMeta() {
     var that = this;
-    app.getUserInfo(info => {
-      that.setData({
-        'diary.meta.avatar': info.avatarUrl,
-        'diary.meta.nickName': info.nickName,
-      })
+    let userInfo = app.appData.userInfo;
+    that.setData({
+      'diary.meta.avatar': userInfo.avatarUrl,
+      'diary.meta.nickName': userInfo.nickName,
     })
   },
 

@@ -102,7 +102,7 @@ Page({
   touchAddNew: function (event) {
     this.hideModal();
     wx.navigateTo({
-      url: "../add/add?title=" + this.data.diaryTitle,
+      url: "../edit/edit?title=" + this.data.diaryTitle,
     });
   },
 

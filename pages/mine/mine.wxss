@@ -51,7 +51,7 @@ page{
   background-color: #fff;
 }
 .header .tablist {
-    height: 50%;
+    height: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;

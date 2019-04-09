@@ -1,8 +1,4 @@
 <!--pages/new/new.wxml-->
-<!--mine.wxml-->
-
-
-
 
   <!--一个全屏模态对话框-->
   <view class="modal" style="{{modalShowStyle}}">
