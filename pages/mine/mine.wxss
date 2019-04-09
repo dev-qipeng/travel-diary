@@ -40,6 +40,15 @@ page{
   font-size: 12px;
 }
 
+.profile .sign {
+  display: inline-block;
+  margin: 7.5px auto;
+  height: 50px;
+}
+.sign input {
+  margin-left: 30rpx;
+}
+
 .more {
     float: right;
     margin: 22.5px 10px;

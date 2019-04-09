@@ -1,6 +1,6 @@
 <!--pages/mine/mine.wxml-->
 <view class="header">
-  <navigator url="../me/me" class="profile">
+  <view url="../me/me" class="profile">
     <image class="avatar" mode="aspectFill" src="{{userInfo.avatar}}"></image>
     <view class="description">
       <view class="item">
@@ -9,8 +9,12 @@
       </view>
       <view class="item item-username">{{userInfo.location}}</view>
     </view>
+    <view class="sign">
+      <input placeholder="此人很懒，什么都没留下" auto-focus />
+      <button ></button>
+    </view>
     <!-- <image class="more" mode="aspectFill" src="../../images/icons/more1.png" bindtap="touchAdd"></image> -->
-  </navigator>
+  </view>
 
   <view class="tablist">
     <view wx:for="{{tabs}}" wx:for-index="idx" class="tab" bindtap="touchTab" style="{{item.extraStyle}}" id="{{idx}}">
